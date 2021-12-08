@@ -1,0 +1,2 @@
+{names: [01_ulcer, 02_mass, 04_lymph, 05_bleeding], nc: 4, train: [/mnt/data2/yj/model/detection/Data/DACON/yolo/images/train,
+    /mnt/data2/yj/model/detection/Data/DACON/yolo/images/valid], val: [/mnt/data2/yj/model/detection/Data/DACON/yolo/images/valid]}
