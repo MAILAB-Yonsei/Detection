@@ -6,6 +6,8 @@
 4. cd detection/yolor
 5. pip install -r requirements.txt
 
+<pre>
+<code>
 install mish-cuda if you want to use mish activation
 
 https://github.com/thomasbrandon/mish-cuda
@@ -19,6 +21,8 @@ https://github.com/JunnYu/mish-cuda
 3. python setup.py build install
 
 4. cd ..
+<pre>
+<code>
 
 install pytorch_wavelets if you want to use dwt down-sampling module
 
