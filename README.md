@@ -3,8 +3,9 @@
 1. conda create -n yolo python=3.8
 2. conda activate yolo
 3. conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
-4. cd detection/yolor
-5. pip install -r requirements.txt
+4. git clone https://github.com/MAILAB-Yonsei/detection.git
+5. cd detection/yolor
+6. pip install -r requirements.txt
 
 
 If you want to use mish activation
