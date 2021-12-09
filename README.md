@@ -1,4 +1,4 @@
-# INSTALLATION
+## INSTALLATION
 
 1. conda create -n yolor python=3.8
 2. conda activate yolor
@@ -23,13 +23,13 @@ pip install .
 cd ..
 
 
-#H2, Preprocessing
+## Preprocessing
 
 cd ../
 yolo_preproceesing.ipynb 파일을 실행시켜 yolo format에 맞게 데이터 전처리 진행
 
-#H2, YoloR 
-#H3, TRAIN
+##, YoloR 
+### TRAIN
 1. cd yolor
 
 2. python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_p6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights ./runs/train/yolor_p626/weights/yolor_all_data.pt
@@ -37,7 +37,7 @@ yolo_preproceesing.ipynb 파일을 실행시켜 yolo format에 맞게 데이터 
 multi scale을 적용하고 싶을 경우
 2. python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_p6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights ./runs/train/yolor_p626/weights/yolor_all_data.pt --multi-scale
 
-#H3, DETECT
+### DETECT
 
 tta 적용 x
 1. python detect.py --save-txt --source ../Data/DACON/yolo/images/test --weights ./runs/train/yolor_p626/weights/yolor_all_data.pt --cfg ./cfg/yolor_w6.cfg --device 0 --img-size 576 --output ../inference/output32
@@ -45,7 +45,7 @@ tta 적용 x
 tta 적용 o 
 1. python detect.py --save-txt --source ../Data/DACON/yolo/images/test --weights ./runs/train/yolor_p626/weights/yolor_all_data.pt --cfg ./cfg/yolor_w6.cfg --device 0 --img-size 576 --output ../inference/output32 --augment
 
-#H2, Test map csv 파일 생성
+##, Test map csv 파일 생성
 cd ../
 python test_scores.py --data <data path> --save <save file path>
 
