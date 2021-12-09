@@ -1,4 +1,4 @@
-<INSTALLATION>
+#H2, INSTALLATION
 
 1. conda create -n yolor python=3.8
 2. conda activate yolor
@@ -7,8 +7,8 @@
 5. pip install -r requirements.txt
 
 install mish-cuda if you want to use mish activation
-# https://github.com/thomasbrandon/mish-cuda
-# https://github.com/JunnYu/mish-cuda
+https://github.com/thomasbrandon/mish-cuda
+https://github.com/JunnYu/mish-cuda
 
 git clone https://github.com/JunnYu/mish-cuda
 cd mish-cuda
@@ -16,35 +16,36 @@ python setup.py build install
 cd ..
 
 install pytorch_wavelets if you want to use dwt down-sampling module
-# https://github.com/fbcotter/pytorch_wavelets
+https://github.com/fbcotter/pytorch_wavelets
 git clone https://github.com/fbcotter/pytorch_wavelets
 cd pytorch_wavelets
 pip install .
 cd ..
 
 
-<Preprocessing>
+#H2, Preprocessing
 
 cd ../
 yolo_preproceesing.ipynb 파일을 실행시켜 yolo format에 맞게 데이터 전처리 진행
 
-<TRAIN>
+#H2, YoloR 
+#H3, TRAIN
 1. cd yolor
 
 2. python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_p6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights ./runs/train/yolor_p626/weights/yolor_all_data.pt
 
-#multi scale을 적용하고 싶을 경우
+multi scale을 적용하고 싶을 경우
 2. python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_p6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights ./runs/train/yolor_p626/weights/yolor_all_data.pt --multi-scale
 
-<DETECT>
+#H3, DETECT
 
-# tta 적용 x
-python detect.py --save-txt --source ../Data/DACON/yolo/images/test --weights ./runs/train/yolor_p626/weights/yolor_all_data.pt --cfg ./cfg/yolor_w6.cfg --device 0 --img-size 576 --output ../inference/output32
+tta 적용 x
+1. python detect.py --save-txt --source ../Data/DACON/yolo/images/test --weights ./runs/train/yolor_p626/weights/yolor_all_data.pt --cfg ./cfg/yolor_w6.cfg --device 0 --img-size 576 --output ../inference/output32
 
-# tta 적용 o 
-python detect.py --save-txt --source ../Data/DACON/yolo/images/test --weights ./runs/train/yolor_p626/weights/yolor_all_data.pt --cfg ./cfg/yolor_w6.cfg --device 0 --img-size 576 --output ../inference/output32 --augment
+tta 적용 o 
+1. python detect.py --save-txt --source ../Data/DACON/yolo/images/test --weights ./runs/train/yolor_p626/weights/yolor_all_data.pt --cfg ./cfg/yolor_w6.cfg --device 0 --img-size 576 --output ../inference/output32 --augment
 
-<Test map csv 파일 생성>
+#H2, Test map csv 파일 생성
 cd ../
 python test_scores.py --data <data path> --save <save file path>
 
