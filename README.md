@@ -52,18 +52,18 @@ tta 적용 o
 ### TRAIN
 1. cd yolov5
 
-* multi scale 적용 x
+*multi scale 적용 x
 2. python train.py --img 576 --batch 16 --epochs 350 --data ../endoscopy.yaml --weights ../yolov5-endscopy/endoscopy_113019/weights/best.pt --project yolov5-endoscopy --save-period 1 --name endoscopy_1130 --device 0
 
-* multi scale 적용 o
+*multi scale 적용 o
 2. python train.py --img 576 --batch 16 --epochs 350 --data ../endoscopy.yaml --weights ../yolov5-endscopy/endoscopy_113019/weights/best.pt --project yolov5-endoscopy --save-period 1 --name endoscopy_1130 --device 0 --multi-scale
 
 ### DETECT
 
-* tta 적용 x
+*tta 적용 x
 3. python detect.py --source ../Data/DACON/yolo/images/test --save-txt --save-conf --weight ../yolov5-endoscopy/endoscopy_1127/weights/yolov5x_195.pt --imgsz 576 --device 0 
 
-* tta 적용 o 
+*tta 적용 o 
 3. python detect.py --source ../Data/DACON/yolo/images/test --save-txt --save-conf --weight ../yolov5-endoscopy/endoscopy_1127/weights/yolov5x_195.pt --imgsz 576 --device 0 --augment
 
 ## Test map csv 파일 생성
