@@ -8,7 +8,7 @@
 6. pip install -r requirements.txt
 
 
-If you want to use mish activation
+If you want to use mish activation(필수 아님)
 
 <pre>
 <code>
@@ -23,7 +23,7 @@ If you want to use mish activation
 </pre>
 
 
-If you want to use dwt down-sampling module
+If you want to use dwt down-sampling module(필수 아님)
 
 <pre>
 <code>
