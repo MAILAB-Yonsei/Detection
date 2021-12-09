@@ -4,7 +4,7 @@
 2. conda activate yolo
 3. conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 4. git clone https://github.com/MAILAB-Yonsei/detection.git
-5. cd detection/yolor
+5. cd detection
 6. pip install -r requirements.txt
 
 
