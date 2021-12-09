@@ -1,4 +1,4 @@
-# H2, INSTALLATION
+# INSTALLATION
 
 1. conda create -n yolor python=3.8
 2. conda activate yolor
