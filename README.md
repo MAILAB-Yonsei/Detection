@@ -3,7 +3,7 @@
 1. conda create -n yolor python=3.8
 2. conda activate yolor
 3. conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
-4. cd Detection/yolor
+4. cd detection/yolor
 5. pip install -r requirements.txt
 
 install mish-cuda if you want to use mish activation
