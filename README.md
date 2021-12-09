@@ -44,7 +44,7 @@ If you want to use dwt down-sampling module (필수 아님)
 <code>
 yolo_preprocessing.py 파일을 실행시켜 yolo format에 맞게 데이터 다운 및 전처리 진행
 
-python yolo_preprocessing.py --data data path
+python yolo_preprocessing.py --data [data path]
 </code>
 </pre>
 
