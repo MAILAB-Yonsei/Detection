@@ -7,7 +7,7 @@
 5. pip install -r requirements.txt
 
 
-if you want to use mish activation
+If you want to use mish activation
 
 <pre>
 <code>
@@ -18,12 +18,11 @@ if you want to use mish activation
 3. python setup.py build install
 
 4. cd ..
-
 </code>
 </pre>
 
 
-if you want to use dwt down-sampling module
+If you want to use dwt down-sampling module
 
 <pre>
 <code>
@@ -34,7 +33,6 @@ if you want to use dwt down-sampling module
 3. pip install .
 
 4. cd ..
-
 </code>
 </pre>
 
