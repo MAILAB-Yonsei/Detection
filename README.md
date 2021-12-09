@@ -66,11 +66,11 @@ cd yolor
 
 - multi scale 적용 x
 
-python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_w6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights [weights path]
+python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_w6 --hyp hyp.scratch.1280.yaml --epochs 600
 
 - multi scale 적용 o
 
-python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_w6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights [weights path] --multi-scale
+python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_w6 --hyp hyp.scratch.1280.yaml --epochs 600 --multi-scale
 </code>
 </pre>
 
@@ -98,11 +98,11 @@ cd yolov5
 
 - multi scale 적용 x
 
-python train.py --img 576 --batch 16 --epochs 350 --data ../endoscopy.yaml --weights [weights path] --project yolov5-endoscopy --save-period 1 --name endoscopy_1130 --device 0
+python train.py --img 576 --batch 16 --epochs 350 --data ../endoscopy.yaml --project yolov5-endoscopy --save-period 1 --name endoscopy_1130 --device 0
 
 - multi scale 적용 o
 
-python train.py --img 576 --batch 16 --epochs 350 --data ../endoscopy.yaml --weights [weights path] --project yolov5-endoscopy --save-period 1 --name endoscopy_1130 --device 0 --multi-scale
+python train.py --img 576 --batch 16 --epochs 350 --data ../endoscopy.yaml --project yolov5-endoscopy --save-period 1 --name endoscopy_1130 --device 0 --multi-scale
 </code>
 </pre>
 
