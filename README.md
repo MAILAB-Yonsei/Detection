@@ -66,11 +66,11 @@ cd yolor
 
 - multi scale 적용 x
 
-python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_p6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights [weights path]
+python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_w6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights [weights path]
 
 - multi scale 적용 o
 
-python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_p6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights [weights path] --multi-scale
+python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_w6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights [weights path] --multi-scale
 </code>
 </pre>
 
