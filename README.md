@@ -53,7 +53,7 @@ python yolo_preprocessing.py --data data path
 #### Pretrained weights for YoloR
 <pre>
 <code>
-cd /yolor
+cd yolor
 bash scripts/get_pretrain.sh
 </code>
 </pre>
