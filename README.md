@@ -40,7 +40,7 @@ cd ../
 yolo_preproceesing.py 파일을 실행시켜 yolo format에 맞게 데이터 전처리 진행
 
 ## YoloR 
-### TRAIN
+#### TRAIN
 1. cd yolor
 
 * multi scale 적용 x
@@ -51,7 +51,7 @@ yolo_preproceesing.py 파일을 실행시켜 yolo format에 맞게 데이터 전
 
 2. python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_p6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights ./runs/train/yolor_p626/weights/yolor_all_data.pt --multi-scale
 
-### DETECT
+#### DETECT
 
 * tta 적용 x
 
@@ -65,7 +65,7 @@ yolo_preproceesing.py 파일을 실행시켜 yolo format에 맞게 데이터 전
   
 
 ## Yolov5 
-### TRAIN
+#### TRAIN
 1. cd yolov5
 
 * multi scale 적용 x
@@ -76,7 +76,7 @@ yolo_preproceesing.py 파일을 실행시켜 yolo format에 맞게 데이터 전
 
 2. python train.py --img 576 --batch 16 --epochs 350 --data ../endoscopy.yaml --weights ../yolov5-endscopy/endoscopy_113019/weights/best.pt --project yolov5-endoscopy --save-period 1 --name endoscopy_1130 --device 0 --multi-scale
 
-### DETECT
+#### DETECT
 
 tta 적용 x
 
