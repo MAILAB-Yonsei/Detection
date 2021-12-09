@@ -40,11 +40,13 @@ If you want to use dwt down-sampling module
 ## Preprocessing
 
 
-
+<pre>
+<code>
 yolo_preprocessing.py 파일을 실행시켜 yolo format에 맞게 데이터 다운 및 전처리 진행
 
 python yolo_preprocessing.py --data data path
-
+</code>
+</pre>
 
 ## YoloR 
 #### TRAIN
@@ -55,11 +57,11 @@ cd yolor
 
 - multi scale 적용 x
 
-python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_p6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights weights path
+python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_p6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights [weights path]
 
 - multi scale 적용 o
 
-python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_p6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights weights path --multi-scale
+python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_p6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights [weights path] --multi-scale
 </code>
 </pre>
 
@@ -68,11 +70,11 @@ python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cf
 <code>
 - tta 적용 x
 
-python detect.py --save-txt --source ../Data/DACON/yolo/images/test --weights weights path --cfg ./cfg/yolor_w6.cfg --device 0 --img-size 576 --output output path
+python detect.py --save-txt --source ../Data/DACON/yolo/images/test --weights weights path --cfg ./cfg/yolor_w6.cfg --device 0 --img-size 576 --output [output path]
 
 - tta 적용 o 
 
-python detect.py --save-txt --source ../Data/DACON/yolo/images/test --weights weights path --cfg ./cfg/yolor_w6.cfg --device 0 --img-size 576 --output output path --augment
+python detect.py --save-txt --source ../Data/DACON/yolo/images/test --weights weights path --cfg ./cfg/yolor_w6.cfg --device 0 --img-size 576 --output [output path] --augment
 </code>
 </pre>
 
