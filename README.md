@@ -21,8 +21,8 @@ https://github.com/JunnYu/mish-cuda
 3. python setup.py build install
 
 4. cd ..
-<pre>
-<code>
+</pre>
+</code>
 
 install pytorch_wavelets if you want to use dwt down-sampling module
 
