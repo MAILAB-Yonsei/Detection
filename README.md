@@ -50,21 +50,24 @@ yolo_preproceesing.py 파일을 실행시켜 yolo format에 맞게 데이터 전
 <code>
 cd yolor
 
-* multi scale 적용 x
+- multi scale 적용 x
 
 python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_p6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights <weights path>
 
-* multi scale 적용 o
+- multi scale 적용 o
 
 python train.py --batch-size 16 --img-size 576 576 --data ../endoscopy.yaml --cfg cfg/yolor_w6.cfg --device 0 --sync-bn --name yolor_p6 --hyp hyp.scratch.1280.yaml --epochs 600 --weights <weights path> --multi-scale
+</code>
+</pre>
 
 #### DETECT
-
-* tta 적용 x
+<pre>
+<code>
+- tta 적용 x
 
 python detect.py --save-txt --source ../Data/DACON/yolo/images/test --weights <weights path> --cfg ./cfg/yolor_w6.cfg --device 0 --img-size 576 --output <output path>
 
-* tta 적용 o 
+- tta 적용 o 
 
 python detect.py --save-txt --source ../Data/DACON/yolo/images/test --weights <weights path> --cfg ./cfg/yolor_w6.cfg --device 0 --img-size 576 --output <output path> --augment
 </code>
@@ -74,28 +77,41 @@ python detect.py --save-txt --source ../Data/DACON/yolo/images/test --weights <w
 
 ## Yolov5 
 #### TRAIN
-2. cd yolov5
 
-* multi scale 적용 x
+<pre>
+<code>
+cd yolov5
 
-3. python train.py --img 576 --batch 16 --epochs 350 --data ../endoscopy.yaml --weights <weights path> --project yolov5-endoscopy --save-period 1 --name endoscopy_1130 --device 0
+- multi scale 적용 x
 
-* multi scale 적용 o
+python train.py --img 576 --batch 16 --epochs 350 --data ../endoscopy.yaml --weights <weights path> --project yolov5-endoscopy --save-period 1 --name endoscopy_1130 --device 0
 
-3. python train.py --img 576 --batch 16 --epochs 350 --data ../endoscopy.yaml --weights <weights path> --project yolov5-endoscopy --save-period 1 --name endoscopy_1130 --device 0 --multi-scale
+- multi scale 적용 o
+
+python train.py --img 576 --batch 16 --epochs 350 --data ../endoscopy.yaml --weights <weights path> --project yolov5-endoscopy --save-period 1 --name endoscopy_1130 --device 0 --multi-scale
+</code>
+</pre>
 
 #### DETECT
-
+<pre>
+<code>
 tta 적용 x
 
-4. python detect.py --source ../Data/DACON/yolo/images/test --save-txt --save-conf --weight <weights path> --imgsz 576 --device 0 
+python detect.py --source ../Data/DACON/yolo/images/test --save-txt --save-conf --weight <weights path> --imgsz 576 --device 0 
 
 tta 적용 o 
 
-4. python detect.py --source ../Data/DACON/yolo/images/test --save-txt --save-conf --weight <weights path> --imgsz 576 --device 0 --augment
+python detect.py --source ../Data/DACON/yolo/images/test --save-txt --save-conf --weight <weights path> --imgsz 576 --device 0 --augment
+</code>
+</pre>
+
 
 ## Test map csv 파일 생성
+<pre>
+<code>
 cd ../
 python test_scores.py --data <data path> --save <save file path>
 
 예시) python test_scores.py --data ./inference/output32 --save ./final_submission_yolor_full.csv
+</code>
+</pre>
