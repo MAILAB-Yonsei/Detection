@@ -41,7 +41,7 @@ If you want to use dwt down-sampling module
 
 
 
-yolo_preprocessing.py 파일을 실행시켜 yolo format에 맞게 데이터 전처리 진행
+yolo_preprocessing.py 파일을 실행시켜 yolo format에 맞게 데이터 다운 및 전처리 진행
 
 
 ## YoloR 
