@@ -107,10 +107,12 @@ python train.py --img 576 --batch 16 --epochs 350 --data ../endoscopy.yaml --pro
 </pre>
 
 #### DETECT
+
+[yolo5x pretrained weights for endoscopic](https://github.com/MAILAB-Yonsei/detection/releases/tag/torchmodel)
 <pre>
 <code>
 
-[yolo5x pretrained weights for endoscopic](https://github.com/MAILAB-Yonsei/detection/releases/tag/torchmodel)
+
 
 tta 적용 x
 
