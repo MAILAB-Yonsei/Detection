@@ -113,6 +113,6 @@ python detect.py --source ../Data/DACON/yolo/images/test --save-txt --save-conf 
 cd ../
 python test_scores.py --data data path --save save file path
 
-예시) python test_scores.py --data ./inference/output32 --save ./final_submission_yolor_full.csv
+예시) python test_scores.py --data ./inference/output32 --save final_submission_yolor_full.csv
 </code>
 </pre>
