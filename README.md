@@ -1,7 +1,7 @@
 ## INSTALLATION
 
-1. conda create -n yolor python=3.8
-2. conda activate yolor
+1. conda create -n yolo python=3.8
+2. conda activate yolo
 3. conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 4. cd detection/yolor
 5. pip install -r requirements.txt
