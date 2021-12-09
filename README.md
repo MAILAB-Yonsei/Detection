@@ -120,7 +120,7 @@ python detect.py --source ../Data/DACON/yolo/images/test --save-txt --save-conf 
 </pre>
 
 
-## Test map csv 파일 생성
+## Test mAP csv 파일 생성
 <pre>
 <code>
 cd ../
