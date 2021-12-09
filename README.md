@@ -6,14 +6,11 @@
 4. cd detection/yolor
 5. pip install -r requirements.txt
 
+
+if you want to use mish activation
+
 <pre>
 <code>
-install mish-cuda if you want to use mish activation
-
-https://github.com/thomasbrandon/mish-cuda
-
-https://github.com/JunnYu/mish-cuda
-
 1. git clone https://github.com/JunnYu/mish-cuda
 
 2. cd mish-cuda
@@ -25,12 +22,11 @@ https://github.com/JunnYu/mish-cuda
 </code>
 </pre>
 
+
+if you want to use dwt down-sampling module
+
 <pre>
 <code>
-install pytorch_wavelets if you want to use dwt down-sampling module
-
-https://github.com/fbcotter/pytorch_wavelets
-
 1. git clone https://github.com/fbcotter/pytorch_wavelets
 
 2. cd pytorch_wavelets
@@ -41,11 +37,14 @@ https://github.com/fbcotter/pytorch_wavelets
 
 </code>
 </pre>
+
 ## Preprocessing
+
 
 1. cd ../
 
 yolo_preproceesing.py 파일을 실행시켜 yolo format에 맞게 데이터 전처리 진행
+
 
 ## YoloR 
 #### TRAIN
